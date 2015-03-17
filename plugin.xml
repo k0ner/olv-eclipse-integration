@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.equinox.http.registry.servlets">
+      <servlet
+            alias="/"
+            class="eu.tendera.otros.eclipse.servlet.OtrosServlet"
+            load-on-startup="true">
+      </servlet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="eu.tendera.otros.eclipse.preferences.OtrosPreferencePage"
+            id="OtrosLogViewerPlugin.preferencePage"
+            name="OtrosLogViewer">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup></startup>
+   </extension>
+
+
+</plugin>
