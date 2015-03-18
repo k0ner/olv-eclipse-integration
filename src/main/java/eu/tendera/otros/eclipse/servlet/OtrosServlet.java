@@ -31,7 +31,7 @@ public class OtrosServlet extends HttpServlet {
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     response.setContentType("text/html");
-    response.addHeader("ide", "idea");
+    response.addHeader("ide", "eclipse");
 
     String operationString = getParameter(request, "operation", "o", "form");
     Operation operation = Operation.valueOf(operationString);
