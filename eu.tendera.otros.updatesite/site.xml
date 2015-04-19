@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/eu.tendera.otros_1.0.0.qualifier.jar" id="eu.tendera.otros" version="1.0.0.qualifier"/>
+   <feature url="features/eu.tendera.otros_1.0.0.201504200045.jar" id="eu.tendera.otros" version="1.0.0.201504200045"/>
 </site>
