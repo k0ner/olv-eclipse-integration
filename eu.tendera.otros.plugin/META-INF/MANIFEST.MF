@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OtrosLogViewerPlugin
-Bundle-SymbolicName: OtrosLogViewerPlugin;singleton:=true
+Bundle-SymbolicName: eu.tendera.otros.plugin;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: eu.tendera.otros.eclipse.Activator
 Bundle-Vendor: eu.tendera.otros
