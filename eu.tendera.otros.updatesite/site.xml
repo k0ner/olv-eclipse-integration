@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/eu.tendera.otros_1.0.0.201504200045.jar" id="eu.tendera.otros" version="1.0.0.201504200045"/>
+   <feature url="features/eu.tendera.otros_1.0.0.201505112231.jar" id="eu.tendera.otros" version="1.0.0.201505112231">
+      <category name="eu.tendera.otros.plugin"/>
+   </feature>
+   <category-def name="eu.tendera.otros.plugin" label="Otros Log Viewer Eclipse Plugin"/>
 </site>
