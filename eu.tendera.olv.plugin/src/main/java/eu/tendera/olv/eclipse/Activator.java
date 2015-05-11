@@ -64,8 +64,7 @@ public class Activator extends AbstractUIPlugin implements IStartup {
   
   private void initializeValues() {
     final IPreferenceStore preferenceStore = getPreferenceStore();
-    preferenceStore.setDefault(PORT, DEFAULT_PORT);
-    preferenceStore.setDefault(ENABLED, DEFAULT_ENABLED);
+    
   }
   
   private void startServlet() {
