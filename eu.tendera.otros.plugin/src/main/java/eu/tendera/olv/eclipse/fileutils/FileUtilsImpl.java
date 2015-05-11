@@ -1,4 +1,4 @@
-package eu.tendera.otros.eclipse.fileutils;
+package eu.tendera.olv.eclipse.fileutils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.Display;
 
-import eu.tendera.otros.eclipse.perspective.OpenPageEditor;
+import eu.tendera.olv.eclipse.perspective.OpenPageEditor;
 
 
 public final class FileUtilsImpl implements FileUtils {

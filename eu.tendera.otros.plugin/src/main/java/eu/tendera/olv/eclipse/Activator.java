@@ -1,9 +1,9 @@
-package eu.tendera.otros.eclipse;
+package eu.tendera.olv.eclipse;
 
-import static eu.tendera.otros.eclipse.OtrosConstants.DEFAULT_ENABLED;
-import static eu.tendera.otros.eclipse.OtrosConstants.DEFAULT_PORT;
-import static eu.tendera.otros.eclipse.OtrosConstants.ENABLED;
-import static eu.tendera.otros.eclipse.OtrosConstants.PORT;
+import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.DEFAULT_ENABLED;
+import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.DEFAULT_PORT;
+import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.ENABLED;
+import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.PORT;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -16,6 +16,8 @@ import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
+
+import eu.tendera.olv.eclipse.preferences.PreferenceConstants;
 
 public class Activator extends AbstractUIPlugin implements IStartup {
 
@@ -37,7 +39,7 @@ public class Activator extends AbstractUIPlugin implements IStartup {
       bundle.start(Bundle.START_TRANSIENT);
     }
 
-    if (getPreferenceStore().getBoolean(OtrosConstants.ENABLED)) {
+    if (getPreferenceStore().getBoolean(PreferenceConstants.ENABLED)) {
       startServlet();
     }
   }
@@ -67,7 +69,7 @@ public class Activator extends AbstractUIPlugin implements IStartup {
   }
   
   private void startServlet() {
-    final int portNo = getPreferenceStore().getInt(OtrosConstants.PORT);
+    final int portNo = getPreferenceStore().getInt(PreferenceConstants.PORT);
 
     final Dictionary<String, Comparable<?>> settings = new Hashtable<>();
     settings.put("http.enabled", Boolean.TRUE);

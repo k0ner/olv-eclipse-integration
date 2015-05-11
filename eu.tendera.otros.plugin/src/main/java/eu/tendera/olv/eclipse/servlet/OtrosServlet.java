@@ -1,4 +1,4 @@
-package eu.tendera.otros.eclipse.servlet;
+package eu.tendera.olv.eclipse.servlet;
 
 import java.io.IOException;
 
@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.IOUtils;
 
-import eu.tendera.otros.eclipse.fileutils.FileUtils;
-import eu.tendera.otros.eclipse.fileutils.FileUtilsImpl;
-import eu.tendera.otros.eclipse.fileutils.SourceLocation;
+import eu.tendera.olv.eclipse.fileutils.FileUtils;
+import eu.tendera.olv.eclipse.fileutils.FileUtilsImpl;
+import eu.tendera.olv.eclipse.fileutils.SourceLocation;
 
 @WebServlet(urlPatterns = { "/*" })
 public class OtrosServlet extends HttpServlet {

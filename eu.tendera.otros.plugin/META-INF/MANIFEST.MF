@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OtrosLogViewerPlugin
-Bundle-SymbolicName: eu.tendera.otros.plugin;singleton:=true
+Bundle-SymbolicName: eu.tendera.olv.plugin;singleton:=true
 Bundle-Version: 1.0.0
-Bundle-Activator: eu.tendera.otros.eclipse.Activator
+Bundle-Activator: eu.tendera.olv.eclipse.Activator
 Bundle-Vendor: eu.tendera.otros
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,

@@ -1,4 +1,4 @@
-package eu.tendera.otros.eclipse.perspective;
+package eu.tendera.olv.eclipse.perspective;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -27,7 +27,7 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.texteditor.ITextEditor;
 
-import eu.tendera.otros.eclipse.fileutils.SourceLocation;
+import eu.tendera.olv.eclipse.fileutils.SourceLocation;
 
 @SuppressWarnings("restriction")
 public class OpenPageEditor implements Runnable {
