@@ -1,16 +1,10 @@
 package eu.tendera.olv.eclipse;
 
-import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.DEFAULT_ENABLED;
-import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.DEFAULT_PORT;
-import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.ENABLED;
-import static eu.tendera.olv.eclipse.preferences.PreferenceConstants.PORT;
-
 import java.util.Dictionary;
 import java.util.Hashtable;
 
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.equinox.http.jetty.JettyConfigurator;
-import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -30,7 +24,6 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 
   @Override
   public void start(BundleContext context) throws Exception {
-    initializeValues();
     super.start(context);
     plugin = this;
 
@@ -60,11 +53,6 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 
   public static ImageDescriptor getImageDescriptor(String path) {
     return imageDescriptorFromPlugin(PLUGIN_ID, path);
-  }
-  
-  private void initializeValues() {
-    final IPreferenceStore preferenceStore = getPreferenceStore();
-    
   }
   
   private void startServlet() {

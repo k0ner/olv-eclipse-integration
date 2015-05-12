@@ -15,7 +15,7 @@ import eu.tendera.olv.eclipse.fileutils.FileUtilsImpl;
 import eu.tendera.olv.eclipse.fileutils.SourceLocation;
 
 @WebServlet(urlPatterns = { "/*" })
-public class OtrosServlet extends HttpServlet {
+public class OLVServlet extends HttpServlet {
 
   private static final long serialVersionUID = 717006710949328871L;
   FileUtils fileUtils;

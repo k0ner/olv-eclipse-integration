@@ -6,7 +6,7 @@
          point="org.eclipse.equinox.http.registry.servlets">
       <servlet
             alias="/"
-            class="eu.tendera.olv.eclipse.servlet.OtrosServlet"
+            class="eu.tendera.olv.eclipse.servlet.OLVServlet"
             load-on-startup="true">
       </servlet>
    </extension>
@@ -14,8 +14,8 @@
          point="org.eclipse.ui.preferencePages">
       <page
             class="eu.tendera.olv.eclipse.preferences.OLVPreferencePage"
-            id="OtrosLogViewerPlugin.preferencePage"
-            name="OtrosLogViewer">
+            id="eu.tendera.olv.eclipse.preferencePage"
+            name="Otros Log Viewer">
       </page>
    </extension>
    <extension
@@ -23,23 +23,10 @@
       <startup></startup>
    </extension>
    <extension
-         point="org.eclipse.ui.menus">
-      <menuContribution
-            allPopups="false"
-            locationURI="eu.tendera.otros.plugin.menuContribution2">
-         <menu
-               icon="images/logo16.png"
-               label="label">
-         </menu>
-         <toolbar
-               id="eu.tendera.otros.plugin.toolbar2">
-            <command
-                  commandId="org.eclipse.ant.ui.openExternalDoc"
-                  icon="images/logo16.png"
-                  style="push">
-            </command>
-         </toolbar>
-      </menuContribution>
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="eu.tendera.olv.eclipse.preferences.PreferenceInitializer">
+      </initializer>
    </extension>
 
 </plugin>
