@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/eu.tendera.olv.feature_1.0.0.201505150018.jar" id="eu.tendera.olv.feature" version="1.0.0.201505150018">
+   <feature url="features/eu.tendera.olv.feature_1.0.0.201505150022.jar" id="eu.tendera.olv.feature" version="1.0.0.201505150022">
       <category name="eu.tendera.olv.plugin"/>
    </feature>
    <category-def name="eu.tendera.olv.plugin" label="Otros Log Viewer Eclipse Integration"/>
