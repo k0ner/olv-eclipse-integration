@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="eu.tendera.olv.ui.preferences.OLVPreferencePage"
+            id="eu.tendera.olv.eclipse.preferencePage"
+            name="Otros Log Viewer">
+      </page>
+   </extension>
+
+</plugin>
