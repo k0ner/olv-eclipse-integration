@@ -4,6 +4,7 @@
     <groupId>eu.tendera.olv</groupId>
     <artifactId>eu.tendera.olv.parent</artifactId>
     <version>1.1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   
   <artifactId>eu.tendera.olv.core</artifactId>
@@ -14,7 +15,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-source-plugin</artifactId>
-        <version>${tycho.version}</version>
+        <version>${tycho-version}</version>
         <executions>
           <execution>
             <id>plugin-source</id>

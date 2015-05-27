@@ -6,6 +6,7 @@
 		<groupId>eu.tendera.olv</groupId>
 		<artifactId>eu.tendera.olv.parent</artifactId>
 		<version>1.1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>eu.tendera.olv.site</artifactId>

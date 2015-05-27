@@ -2,7 +2,7 @@
 <feature
       id="eu.tendera.olv.feature"
       label="Otros Log Viewer Eclipse Integration"
-      version="1.0.0.qualifier"
+      version="1.1.0.qualifier"
       provider-name="eu.tendera.olv">
 
    <description>
