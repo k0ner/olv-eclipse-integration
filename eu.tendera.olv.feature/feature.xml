@@ -3,8 +3,7 @@
       id="eu.tendera.olv.feature"
       label="Otros Log Viewer Eclipse Integration"
       version="1.0.0.qualifier"
-      provider-name="eu.tendera.olv"
-      plugin="eu.tendera.olv.plugin">
+      provider-name="eu.tendera.olv">
 
    <description>
       This feature provides enables you to integrate Otros Log Viewer with Eclipse platform.
@@ -76,7 +75,14 @@ END OF TERMS AND CONDITIONS
    </url>
 
    <plugin
-         id="eu.tendera.olv.plugin"
+         id="eu.tendera.olv.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="eu.tendera.olv.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"
